@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+		$("body").localScroll({
+			queue:true,
+			duration:800,
+			hash:true
+		});
 	
 		function randomFromTo(from, to){
 			return Math.floor(Math.random() * (to - from + 1) + from);

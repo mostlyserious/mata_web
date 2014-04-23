@@ -137,7 +137,7 @@ h3 {
 /* ------------------------------------------------------------------------------------------------------- Menu styles */
 /* ------------------------------------------------------------------------------------------------------------------- */
 
-div.menu-wrap {
+.menu-wrap {
 	width:100%;
 	background: rgba(13,19,22,0.8);
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
@@ -152,23 +152,23 @@ header {
 	position:relative;
 }
 
-header a.logo {
+header .logo {
 	float:left;
 }
 
-header nav.menu {
+header .menu {
 	float:right;
 	font-weight:600;
 }
 
-header nav.menu a {
+header .menu a {
 	text-transform:uppercase;
 	display:inline-block;
 	padding-left:24px;
 	color:#FFF;
 }
 
-header nav.menu a:hover {
+header .menu a:hover {
 	color:#bad268;
 }
 
@@ -176,7 +176,7 @@ header nav.menu a:hover {
 /* ------------------------------------------------------------------------------------------------------ Intro styles */
 /* ------------------------------------------------------------------------------------------------------------------- */
 
-div.intro-wrap {
+.intro-wrap {
 	width:100%;
 	height:100%;
 	background:#182730 url(../img/circuit-bg.svg) top left repeat fixed;
@@ -184,32 +184,32 @@ div.intro-wrap {
 	z-index:1;
 }
 
-header.intro {
+.intro {
 	padding-top:144px;
 	position:relative;
 	z-index:10;
 }
 
-header.intro img {
+.intro img {
 	width:480px;
 	height:auto;
 	float:left;
 }
 
-header.intro div.intro-text {
+.intro .intro-text {
 	width:368px;
 	padding:60px 0px 0px 112px;
 	float:left;
 	color:#dee9ef;
 }
 
-header.intro div.intro-text h1 {
+.intro .intro-text h1 {
 	font-size:72px;
 	color:#FFF;
 	padding-bottom:24px;
 }
 
-header.intro div.intro-text a.readmore {
+.intro .intro-text .readmore {
 	font-size:24px;
 	padding:24px 48px;
 	margin-top:24px;
@@ -308,11 +308,11 @@ header.intro div.intro-text a.readmore {
 /* ------------------------------------------------------------------------------------------------- Descripton styles */
 /* ------------------------------------------------------------------------------------------------------------------- */
 
-article.description {
+.description, .events {
 	padding:120px 0px;
 }
 
-article.description h1 {
+.description h1 {
 	font-size:96px;
 	text-align:center;
 	padding-bottom:72px;
@@ -321,14 +321,14 @@ article.description h1 {
 	color:#0d1316;
 }
 
-article.description section.col {
+.description .col {
 	width:296px;
 	padding:12px;
 	float:left;
 	text-align:center;
 }
 
-article.description section.col span {
+.description .col span {
 	font-size:160px;
 	line-height:1em;
 	padding-bottom:12px;
@@ -336,32 +336,45 @@ article.description section.col span {
 	text-shadow:2px 2px 0px #4be08f;
 }
 
-article.description section.col h2 {
+.description .col h2 {
 	padding-bottom:12px;
 	color:#075472;
+}
+
+.events {
+	border-top: solid 1px #edf3f6;
+}
+
+.events .event {
+	width: 50%;
+	padding: 48px 0px;
+}
+
+.events .event h2 {
+	padding-bottom: 24px;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- Support styles */
 /* ------------------------------------------------------------------------------------------------------------------- */
 
-div.support-wrap {
+.support-wrap {
 	width:100%;
 	background:#edf3f6;
 }
 
-article.support {
+.support {
 	padding:120px 0px;
 }
 
-article.support h1 {
+.support h1 {
 	padding-bottom:48px;
 	display:block;
 	clear:both;
 	color:#0d1316;
 }
 
-article.support section.supporter {
+.support .supporter {
 	width:272px;
 	height:180px;
 	background:#182730;
@@ -372,17 +385,17 @@ article.support section.supporter {
 	z-index:5;
 }
 
-article.support section.supporter a {
+.support .supporter a {
 	display:block;
 	font-size: 0.9em;
 }
 
-article.support section.supporter a span {
+.support .supporter a span {
 	vertical-align:middle;
 	color:#FFF;
 }
 
-article.support section.supporter div.overlay {
+.support .supporter .overlay {
 	width:272px;
 	height:180px;
 	background:#FFF;
@@ -394,7 +407,7 @@ article.support section.supporter div.overlay {
 	z-index:10;
 }
 
-article.support section.supporter div.overlay img {
+.support .supporter .overlay img {
 	width:100%;
 	height:auto;
 	vertical-align:middle;
@@ -404,7 +417,7 @@ article.support section.supporter div.overlay img {
 /* ----------------------------------------------------------------------------------------------------- Footer styles */
 /* ------------------------------------------------------------------------------------------------------------------- */
 
-div.footer-wrap {
+.footer-wrap {
 	width:100%;
 	background:#182730 url(../img/circuit-bg.svg) top left repeat fixed;
 }
@@ -413,16 +426,16 @@ footer {
 	padding:120px 0px;
 }
 
-footer section.contact-form {
+footer .contact-form {
 	width:320px;
 	float:left;
 }
 
-footer section.contact-form form div {
+footer .contact-form form  {
 	padding-bottom:1px;
 }
 
-footer section.contact-form form div.field input, footer section.contact-form form div.textarea textarea {
+footer .contact-form form .field input, footer .contact-form form .textarea textarea {
 	font-family: 'Open Sans', sans-serif;
 	width:272px;
 	font-size:18px;
@@ -441,16 +454,16 @@ footer section.contact-form form div.field input, footer section.contact-form fo
 	border:0px;
 }
 
-footer section.contact-form form div.textarea textarea {
+footer .contact-form form .textarea textarea {
 	height:116px;
 }
 
-footer section.contact-form form div.field input:focus, footer section.contact-form form div.textarea textarea:focus {
+footer .contact-form form .field input:focus, footer .contact-form form .textarea textarea:focus {
 	outline:none;
 	background:#057ca3;
 }
 
-footer section.contact-form form div.submit input {
+footer .contact-form form .submit input {
 	font-family: 'Open Sans', sans-serif;
 	width:100%;
 	font-size:24px;
@@ -470,27 +483,27 @@ footer section.contact-form form div.submit input {
 	border:0px;
 }
 
-footer section.contact-form form div.submit input:hover {
+footer .contact-form form .submit input:hover {
 	background:#4be08f;
 }
 
-footer section.connect {
+footer .connect {
 	width:580px;
 	padding-right:60px;
 	float:left;
 	color:#edf3f6;
 }
 
-footer section.connect h1 {
+footer .connect h1 {
 	color:#FFF;
 	padding-bottom:24px;
 }
 
-footer section.connect div.social-wrap {
+footer .connect .social-wrap {
 	padding-top:24px;
 }
 
-footer section.connect div.social-wrap a.social {
+footer .connect .social-wrap a.social {
 	width:100px;
 	height:100px;
 	display:inline-block;
@@ -512,15 +525,15 @@ footer section.connect div.social-wrap a.social {
 	margin-right:20px;
 }
 
-footer section.connect div.social-wrap a.social:hover {
+footer .connect .social-wrap a.social:hover {
 	background:#4be08f;
 }
 
-footer section.connect div.social-wrap a.social:last-child {
+footer .connect .social-wrap a.social:last-child {
 	margin-right:0px;
 }
 
-div.credit-wrap {
+.credit-wrap {
 	width:100%;
 	background:#0d1316;
 }
